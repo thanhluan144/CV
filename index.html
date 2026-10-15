@@ -574,7 +574,7 @@
     ============================================================ */
     .projects-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr;
       gap: 20px;
     }
 
@@ -1160,13 +1160,26 @@
 
         <div class="projects-grid">
 
-          <!-- Project 1 -->
+          <!-- Project: Tuyển Sinh AI -->
           <div class="project-card reveal">
-            <div class="project-badge"><i class="fa-solid fa-robot"></i></div>
-            <p class="project-name">Tuyển Sinh AI – Web tra cứu điểm &amp; Tư vấn đại học</p>
+            <div style="display:flex;align-items:center;gap:14px;margin-bottom:2px;">
+              <div class="project-badge"><i class="fa-solid fa-robot"></i></div>
+              <div>
+                <p class="project-name" style="font-size:1.05rem;">Tuyển Sinh AI – Web tra cứu điểm &amp; Trợ lý tư vấn đại học</p>
+                <span style="font-size:0.72rem;font-weight:600;color:var(--accent);background:var(--accent-light);padding:2px 8px;border-radius:var(--radius-full);display:inline-block;margin-top:2px;">Dự án tiêu biểu</span>
+              </div>
+            </div>
+
             <p class="project-desc">
               Xây dựng nền tảng web thông minh hỗ trợ thí sinh và phụ huynh tra cứu điểm chuẩn, phổ điểm theo tổ hợp môn và khối ngành qua các năm. Tích hợp <strong>trợ lý ảo AI</strong> phân tích dữ liệu điểm thi tốt nghiệp THPT, tư vấn chọn ngành, dự đoán cơ hội trúng tuyển và gợi ý lộ trình xét tuyển phù hợp với nguyện vọng cá nhân.
             </p>
+
+            <ul class="timeline-desc" style="margin: 4px 0 6px;">
+              <li><strong>Tra cứu trực quan:</strong> Cơ sở dữ liệu điểm chuẩn, chỉ tiêu và tổ hợp môn của các trường đại học được chuẩn hóa, dễ dàng lọc và đối sánh qua các năm.</li>
+              <li><strong>Trợ lý ảo AI (Chatbot):</strong> Ứng dụng mô hình AI xử lý ngôn ngữ tự nhiên để giải đáp thắc mắc, tư vấn ngành học phù hợp với năng lực và tổ hợp môn thi.</li>
+              <li><strong>Trải nghiệm tối ưu:</strong> Tốc độ tải và phản hồi nhanh chóng, giao diện tối giản hiện đại, tương thích hoàn hảo trên cả desktop và mobile.</li>
+            </ul>
+
             <div class="project-tech-stack">
               <span class="tech-tag">React / Next.js</span>
               <span class="tech-tag">Node.js</span>
@@ -1176,88 +1189,11 @@
               <span class="tech-tag">PostgreSQL</span>
               <span class="tech-tag">Tailwind / CSS3</span>
             </div>
-            <div class="project-actions">
+            <div class="project-actions" style="margin-top:6px;">
               <a href="https://github.com/thanhluan144/tuvantuyensinh" target="_blank" rel="noopener" class="btn btn-outline">
                 <i class="fa-brands fa-github"></i> Source Code
               </a>
               <a href="https://thanhluan144.github.io/tuvantuyensinh/" target="_blank" rel="noopener" class="btn btn-primary">
-                <i class="fa-solid fa-up-right-from-square"></i> Live Demo
-              </a>
-            </div>
-          </div>
-
-          <!-- Project 2 -->
-          <div class="project-card reveal reveal-delay-1">
-            <div class="project-badge"><i class="fa-solid fa-notes-medical"></i></div>
-            <p class="project-name">ClinicBook – App đặt lịch khám bệnh</p>
-            <p class="project-desc">
-              Ứng dụng di động đa nền tảng giúp bệnh nhân đặt lịch khám, nhận nhắc nhở qua push notification và tra cứu hồ sơ bệnh án. Tích hợp Firebase Realtime Database để đồng bộ lịch hẹn tức thì, hỗ trợ nội dung offline-first.
-            </p>
-            <div class="project-tech-stack">
-              <span class="tech-tag">Flutter</span>
-              <span class="tech-tag">Dart</span>
-              <span class="tech-tag">Firebase</span>
-              <span class="tech-tag">FCM</span>
-              <span class="tech-tag">GetX</span>
-              <span class="tech-tag">Hive</span>
-            </div>
-            <div class="project-actions">
-              <a href="https://github.com/thanhluan144/clinicbook" target="_blank" rel="noopener" class="btn btn-outline">
-                <i class="fa-brands fa-github"></i> Source Code
-              </a>
-              <a href="https://clinicbook-demo.web.app" target="_blank" rel="noopener" class="btn btn-primary">
-                <i class="fa-solid fa-up-right-from-square"></i> Live Demo
-              </a>
-            </div>
-          </div>
-
-          <!-- Project 3 -->
-          <div class="project-card reveal reveal-delay-2">
-            <div class="project-badge"><i class="fa-solid fa-chart-line"></i></div>
-            <p class="project-name">DevTrack – Quản lý task nhóm Kanban</p>
-            <p class="project-desc">
-              Ứng dụng quản lý công việc nhóm theo phong cách Kanban, hỗ trợ kéo-thả task giữa các cột trạng thái, chat nội bộ real-time qua WebSocket, phân quyền thành viên và thống kê tiến độ sprint. Triển khai trên Docker &amp; Railway.
-            </p>
-            <div class="project-tech-stack">
-              <span class="tech-tag">TypeScript</span>
-              <span class="tech-tag">React</span>
-              <span class="tech-tag">Node.js</span>
-              <span class="tech-tag">WebSocket</span>
-              <span class="tech-tag">PostgreSQL</span>
-              <span class="tech-tag">Docker</span>
-            </div>
-            <div class="project-actions">
-              <a href="https://github.com/thanhluan144/devtrack" target="_blank" rel="noopener" class="btn btn-outline">
-                <i class="fa-brands fa-github"></i> Source Code
-              </a>
-              <a href="https://devtrack.up.railway.app" target="_blank" rel="noopener" class="btn btn-primary">
-                <i class="fa-solid fa-up-right-from-square"></i> Live Demo
-              </a>
-            </div>
-          </div>
-
-          <!-- Project 4 – Capstone -->
-          <div class="project-card reveal reveal-delay-3">
-            <div class="project-badge" style="background:linear-gradient(135deg,var(--accent-light),#F5F3FF);">
-              <i class="fa-solid fa-award" style="color:#7C3AED;"></i>
-            </div>
-            <p class="project-name">Đồ án tốt nghiệp – Hệ thống e-Learning</p>
-            <p class="project-desc">
-              Nền tảng học trực tuyến với phát video bài giảng, bài tập trắc nghiệm chấm điểm tự động, cấp chứng chỉ hoàn thành và bảng quản trị cho giảng viên. Đạt điểm bảo vệ <strong>9.2/10</strong>.
-            </p>
-            <div class="project-tech-stack">
-              <span class="tech-tag">Next.js</span>
-              <span class="tech-tag">Prisma ORM</span>
-              <span class="tech-tag">PostgreSQL</span>
-              <span class="tech-tag">Cloudinary</span>
-              <span class="tech-tag">Stripe</span>
-              <span class="tech-tag">Vercel</span>
-            </div>
-            <div class="project-actions">
-              <a href="https://github.com/thanhluan144/elearn-platform" target="_blank" rel="noopener" class="btn btn-outline">
-                <i class="fa-brands fa-github"></i> Source Code
-              </a>
-              <a href="https://elearn-platform.vercel.app" target="_blank" rel="noopener" class="btn btn-primary">
                 <i class="fa-solid fa-up-right-from-square"></i> Live Demo
               </a>
             </div>
